@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/darkly/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JS -->
+
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-animate.min.js"></script>
+  <script src="app.js"></script>
+  <script src="datetime-picker.js"></script>
+</head>
+
+<body ng-app="formApp">
+  <!-- views will be injected here -->
+  <div class="container">
+    <div ui-view=""></div>
+  </div>
+</body>
+
+</html>

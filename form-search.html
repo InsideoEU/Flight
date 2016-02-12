@@ -1,0 +1,44 @@
+<div class="form-group">
+  <label for="name">Destination</label>
+  <input type="text" class="form-control" name="destination" ng-model="formData.destination">
+</div>
+<div class="form-group">
+  <label for="date">Choose date</label>
+   <div class="form-group">
+        <label class="col-sm-2 control-label">From</label>
+        <div class="col-sm-10">
+            <p class="input-group">
+                <input type="text" class="form-control" datetime-picker="dd MMM yyyy" ng-model="formData.arrival" is-open="ctrl.open.date4" enable-time="false" max-date="ctrl.dates.date5" />
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="ctrl.openCalendar($event, 'date4')"><i class="fa fa-calendar"></i></button>
+            </span>
+            </p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">To</label>
+        <div class="col-sm-10">
+            <p class="input-group">
+                <input type="text" class="form-control" datetime-picker="dd MMM yyyy" ng-model="formData.departure" is-open="ctrl.open.date5" enable-time="false" min-date="ctrl.dates.date4" />
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="ctrl.openCalendar($event, 'date5')"><i class="fa fa-calendar"></i></button>
+            </span>
+            </p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">You choose to stay:</label>
+        <div class="col-sm-10">
+            <p class="form-control-static">{{ formController.dayRange }} (days)</p>
+        </div>
+    </div>
+  
+</div>
+
+<div class="form-group row">
+  <div class="col-xs-6 col-xs-offset-3">
+    <a ui-sref="form.profile" class="btn btn-block btn-info">
+    Next Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
+    </a>
+  </div>
+</div>
